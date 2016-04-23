@@ -3,7 +3,7 @@ import numpy as np
 from PIL import Image
 import sys, time
 
-ReferenceImage = 'reference/ref.png'
+REFERENCE_IMAGE = 'reference/ref.png'
 
 class ImageProcessing:
 	INPUT_IMAGE = ""
@@ -22,7 +22,7 @@ class ImageProcessing:
 
 		cv2.imwrite(self.SAVE_IMAGE, img_binary)
 
-		diff_percentage = self.get_image_pixel_similarity(self.SAVE_IMAGE, ReferenceImage)
+		diff_percentage = self.get_image_pixel_similarity(self.SAVE_IMAGE, REFERENCE_IMAGE)
 
 		print 'diff_percentage : ' + str(diff_percentage)
 
@@ -208,9 +208,9 @@ class ImageProcessing:
 
 		return img_diff
 
-if __name__ == '__main__':
-
-	INPUT_IMAGE = "input/input.png"
-
-	SAVE_IMAGE = "save/save.png"
-	ImageProcessing(INPUT_IMAGE, SAVE_IMAGE)
+# if __name__ == '__main__':
+#
+# 	INPUT_IMAGE = "input/input.png"
+#
+# 	SAVE_IMAGE = "save/save.png"
+# 	ImageProcessing(INPUT_IMAGE, SAVE_IMAGE)
