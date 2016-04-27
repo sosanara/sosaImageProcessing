@@ -40,9 +40,3 @@
 ##### img2 : 540*960 크기의 검은 reference image
 ##### 살색의 비율을 검출하는 메서드 ( Percentage를 반환한다.)
 
-
-## 16.04.27 추가사항
-#### return을 JSON 형식으로 바꿈
-#### 예시 : {'result': {'PERCENT': '20.1235360301', 'NAME': 'reference/1/3.png'}}
-#### PERCENT는 살색의 비율, TYPE은 가장 유사한 TYPE의 경로
-
